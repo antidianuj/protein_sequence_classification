@@ -15,7 +15,7 @@ This apporach I term as "LSTM-Masked-MLP". Following are the schemes of two topo
 ![image](https://user-images.githubusercontent.com/47445756/235841380-53c1cea0-eb54-4d2b-ac93-15e3ce81639b.png)
 
 
-The difference between topology 1 and 2 is that in topology-1, same MLP is considered over each point at sequence, while in toplogy-2, different MLP is associated with each point of sequence, which are the output hidden states of LSTM. The concatenated output is fed into a classifier like MLP to determine classification probabilities.
+The difference between topology 1 and 2 is that in topology-1, same MLP is considered over each point at sequence, while in toplogy-2, different MLP is associated with each point of sequence, which are the output hidden states of LSTM. The MLP acts on masked hidden states where the considered hidden state is removed, and the remaining sequency is mapped to a low dimensional sequence. Later, the concatenated output is fed into a classifier like MLP to determine classification probabilities.
 
 
 Following is the comparison of training accuracy and loss curves during cases of study.
