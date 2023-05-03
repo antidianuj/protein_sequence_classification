@@ -1,11 +1,11 @@
-## protein_sequence_classification
+## Protein Sequence Classification
 
 ## Protein-Protein interaction predicton
 Either using identifier ID (Case-1) or gene names (Case-2) of protein A and protein B, to determine the interaction type. In this course, I considered a study of employing MLP for finding the performance over Case-1 and Case-2. Furthermore, I also employ a possible new approach to feed the temporal information surrounding individual points to study the peroformance over case-2 into a MLP classifier.
 
 This apporach I term as "LSTM-Masked-MLP". Following are the schemes of two topologies associated to it.
 
-### Topolog-1
+### Topology-1
 
 ![image](https://user-images.githubusercontent.com/47445756/235841336-c332073a-c6d7-4385-b801-275342b2b1db.png)
 
