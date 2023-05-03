@@ -1,6 +1,9 @@
 ## Protein Sequence Classification
 
 ## Protein-Protein interaction predicton
+Dataset source: https://thebiogrid.org/77183/publication/a-human-protein-protein-interaction-network-a-resource-for-annotating-the-proteome.html
+
+
 Either using identifier ID (Case-1) or gene names (Case-2) of protein A and protein B, to determine the interaction type. In this course, I considered a study of employing MLP for finding the performance over Case-1 and Case-2. Furthermore, I also employ a possible new approach to feed the temporal information surrounding individual points to study the peroformance over case-2 into a MLP classifier.
 
 This apporach I term as "LSTM-Masked-MLP". Following are the schemes of two topologies associated to it.
